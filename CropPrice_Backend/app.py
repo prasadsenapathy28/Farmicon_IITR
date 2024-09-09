@@ -32,7 +32,7 @@ clients = []
 
 def fetch_and_update_data():
     try:
-        api_url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001ec9bc6023f4c40604f380a05e156be33&format=xml"
+        api_url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=<your-api-key>&format=xml"
         current_time = datetime.now()
         # print('Current_Run_Time :', current_time)
         next_run_time = current_time + timedelta(minutes=30)
