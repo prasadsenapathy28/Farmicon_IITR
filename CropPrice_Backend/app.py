@@ -21,8 +21,8 @@ app = Flask(__name__)
 CORS(app)
 sockets = Sockets(app)
 
-username = quote_plus("farmicon_")
-password = quote_plus("farmicon@123")
+username = quote_plus("{username}")
+password = quote_plus("{password}")
 mongo_uri = f"mongodb+srv://{username}:{password}@cluster0.kdlwnl2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(mongo_uri, tls=True, tlsAllowInvalidCertificates=False)
 db = client.crop_price_db
